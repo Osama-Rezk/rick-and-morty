@@ -1,114 +1,70 @@
-# 🧑‍💻 React App Exercise
+# Getting Started with Create React App
 
-In this code challenge, we would like to assess your skills and knowledge in areas that matter to us, and we work with on a daily basis.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-What we review:
+## Available Scripts
 
--   **Architecture:** how clean is the separation of components, folder structuring and design patterns? Does the code specifically follow OOP paradigm, FP paradigm or an appropriate mixture of both? Is the code imperative or declarative?
--   **React Skills:** state management, routing, performance and optimisations, etc.
--   **Code Quality:** are namings across the code appropriate? Is the code reusable and readable? Are there any ESLint issues?
--   **Testing:** how through are the tests? Are they testing behaviour or implementation details?
--   **Documentation:** are technical choices and trade-offs explained?
+In the project directory, you can run:
 
-## 📝 Notes
+### `npm start`
 
-> If you have any questions or encounter any problems, feel free to let us know.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-> The audience of this web application is users on desktop, with the latest browsers
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-> Although we have noted what library/framework we use at Entyre in different parts of this README, you can use any library or framework that you are comfortable with.
+### `npm test`
 
-## 🎯 Objective
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Create a web app that lists Rick and Morty characters based on this API: https://rickandmortyapi.com/documentation/#graphql
+### `npm run build`
 
-### Homepage
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Should include:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-1. list 20 characters per page
-2. have pagination
-3. each character should have a card
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Card
+### `npm run eject`
 
-Should include this information about a character:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. image
-2. name
-3. status - a badge next to the name that its colour corresponds to:
-    - green when status=Alive
-    - red when status=Dead
-    - grey when status=unknown
-4. a link to the character's profile
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### Profile
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-Should be accessible on this route: `/profile/%character_id` and include this information in addition to the card:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1. species
-2. type
-3. gender
-4. location name
-5. backlink to the homepage
+## Learn More
 
-### Search
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-A search box should be present on all pages.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-After the user submits the search query, redirect the user to this route: `/search?q=%s`
+### Code Splitting
 
-Then show a listing of found results. Add pagination if results are more than 20.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Recently Visited Profiles
+### Analyzing the Bundle Size
 
-Show a list of the **last 10 visited profiles** in the footer of all pages.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-Please use a Global State Management library ([Recoil](https://recoiljs.org/), [Redux](https://redux.js.org/), etc.) instead of local storage, cookies or IndexedDB.
+### Making a Progressive Web App
 
-## 🪣 Requirements
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
--   A working React application
-    -   `yarn build` runs successfully
-    -   The build output can be [easily tested](https://www.npmjs.com/package/serve)
--   Use TypeScript
-    -   Strong typing as much as possible
--   Minimum of three unit/integration/component tests
-    -   We use [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
--   A minimalistic UI
-    -   You can use plain CSS or any library/framework
-    -   We mainly use [Material UI](https://material-ui.com/)
+### Advanced Configuration
 
-> We have suggested a "minimum" number of tests to reduce the development time for this challenge. Though in practice, we try to have 100% coverage.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## 💻 Setup
+### Deployment
 
-To set up the project you have multiple options:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-1. Use our boilerplate
-    - It is based on [CRA](https://create-react-app.dev/)
-    - **Recommended** - because it already has everything set up for you
-2. Set up your build tool (we use [webpack](https://webpack.js.org/)), git, and required packages and tools from scratch
+### `npm run build` fails to minify
 
-## 💾 Submission
-
-Please create a pull request and notify us by email.
-Shortly after, we will provide our feedback in the PR.
-
-In a follow-up meeting we might ask about the questions below, perhaps take notes while developing:
-
--   Reasoning behind your technical choices including architectural
--   Any further improvement you could have made if you had more time
--   Any trade-offs you might have made due to some constraints
-
-## ✨ Nice-to-Haves:
-
-Of course, given the time constraint we do not expect any of these tasks to be completed, but if you fancy taking this challenge to the next level, feel free to work on any of these tasks:
-
--   100% unit test coverage
--   Add auto-complete functionality to the search box
--   Limit the number of shown pages in the pagination. E.g. `1, 2, 3, ..., 30, 31, 32`
--   Use SEO-friendly page slugs. E.g. `/profile/24-rick-sanchez`
--   Set page title for each different page
--   Submit the search form when the user presses the `Enter` key
--   E2E tests (we use [Cypress](https://www.cypress.io/))
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
